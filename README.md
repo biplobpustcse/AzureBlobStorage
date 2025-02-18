@@ -5,15 +5,22 @@ Before we proceed, you need to create an Azure Storage Account. If you’re unsu
 
 ![image](https://github.com/user-attachments/assets/43b23104-b433-420d-a632-a679f6dbe4de)
 
-#### Step 2. Configuring the ASP.NET Core Application
+#### Step 2. Create Project
+ASP.NET Core Web API
+
+#### Step 3: Install Required NuGet Package
+```
+dotnet add package Azure.Storage.Blobs
+```
+
+#### Step 4. Configuring the ASP.NET Core Application
 In your ASP.NET Core project, open the appsettings.json file. This file contains configuration settings for your application. Add the following configuration snippet, replacing “YourConnectionStringHere” with the connection string obtained from the Azure portal:
 
 ```
 {
   "AzureStorage": {
-    "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=testazurestorage;AccountKey=11111111111111111.net",
-    "ContainerName": "testazurestorage"
+    "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=your_account_name;AccountKey=your_account_key;EndpointSuffix=core.windows.net",
+    "ContainerName": "your-container-name"
   }
 }
 ```
-#### Step 3. Create Project
