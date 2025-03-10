@@ -12,7 +12,6 @@ ASP.NET Core Web API
 ```
 dotnet add package Azure.Storage.Blobs
 ```
-
 #### Step 4. Configuring the ASP.NET Core Application
 In your ASP.NET Core project, open the appsettings.json file. This file contains configuration settings for your application. Add the following configuration snippet, replacing “YourConnectionStringHere” with the connection string obtained from the Azure portal:
 
